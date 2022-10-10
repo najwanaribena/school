@@ -57,12 +57,12 @@
             android:src="@drawable/cat" />
 
         <ImageView
-            android:id="@+id/imageGigachad"
+            android:id="@+id/imageCat2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/gigachad" />
+            android:src="@drawable/cat2" />
 
     </LinearLayout>
 
