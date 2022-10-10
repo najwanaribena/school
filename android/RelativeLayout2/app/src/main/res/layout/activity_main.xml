@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000FF">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="#EFF1EC"
+            android:paddingLeft="10dp"
+            android:hint="Nama" />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/nama"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:background="#EFF1EC"
+            android:hint="Alamat" />
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/subjek"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:background="#EFF1EC"
+        android:hint="Subjek" />
+
+    <EditText
+        android:id="@+id/pesan"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/subjek"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:gravity="top"
+        android:background="#EFF1EC"
+        android:hint="Pesan" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pesan"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="kirim"
+        android:backgroundTint="#EFF1EC"
+        android:textColor="#000000"
+        />
+</RelativeLayout>
