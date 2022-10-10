@@ -23,5 +23,6 @@
         android:layout_centerInParent="true"
         android:background="@android:color/black"
         android:gravity="center"
-        android:text="id:B" />
+        android:text="id:B"
+        android:layout_above="@id/a" />
 </RelativeLayout>
