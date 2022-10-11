@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentleft="true"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:text="B"
+        android:textSize="20dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFFFFF"
+        android:background="#A149FA"
+        android:text="C"
+        android:textSize="20dp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:background="#808080"
+        android:text="A"
+        android:textSize="20dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/A"
+        android:layout_toLeftOf="@+id/A"
+        android:textColor="#FFFFFF"
+        android:background="#9FB4FF"
+        android:text="F"
+        android:textSize="20dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/A"
+        android:layout_toRightOf="@+id/A"
+        android:textColor="#FFFFFF"
+        android:background="#FD5D5D"
+        android:text="G"
+        android:textSize="20dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:background="#9FB4FF"
+        android:text="E"
+        android:textSize="20dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFFFFF"
+        android:background="#FD5D5D"
+        android:text="D"
+        android:textSize="20dp"
+        android:gravity="center" />
+
+</RelativeLayout>
