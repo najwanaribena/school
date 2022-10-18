@@ -1,0 +1,47 @@
+#atas {
+  background-image: url('../img/meme.jpeg');
+  height: 269px;
+  width: 900px;
+  position: relative;
+  display: block;
+  margin-top: -10;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: Consolas;
+  padding-top: 40px;
+  font-size: 40px;
+  text-shadow: -5px -5px 5px lavender;
+  color: rosybrown;
+}
+
+img#P_Photo {
+  margin-top: 10px;
+  margin-left: 200px;
+  float: left;
+  clear: both;
+  position: relative;
+  border-radius: 5%;
+  color: dodgerblue;
+  border-style: dotted;
+}
+
+#profil {
+  width: 400px;
+  height: 500px;
+  margin-top: 10px;
+  margin-left: 480px;
+  margin-right: 200px;
+  padding-left: 12px;
+  display: block;
+  font-family: chilanka;
+  background-color: thistle;
+  opacity: 0.7;
+}
+
+body {
+  background-image: url('../img/bg.jpg');
+}

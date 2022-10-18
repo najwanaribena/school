@@ -1,0 +1,45 @@
+h2 {
+  text-decoration: line-through;
+}
+
+h3 {
+  text-emphasis: none;
+}
+
+h4 {
+  letter-spacing: -1px;
+  color: coral;
+}
+
+p {
+  color: darkseagreen;
+}
+
+em {
+  letter-spacing: 0.5cm;
+  text-decoration: overline;
+  color: salmon;
+}
+
+a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+p.duasenti {
+  word-spacing: 2cm;
+}
+
+p.limapiksel {
+  word-spacing: 5px;
+}
+
+body {
+  background-image: url('../img/steak.jpeg'), url('../img/bg.jpg');
+}
+
+p, h4, em, h2, h3, a {
+  text-indent: 2cm;
+  background-color: bisque;
+  font-family: Consolas;
+}

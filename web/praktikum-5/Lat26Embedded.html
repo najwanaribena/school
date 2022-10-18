@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Contoh Embedded, Selector Class & ID</title>
+    <style type="text/css">
+      #Bubblegum {
+        height: 28%;
+        background-color: mistyrose;
+        border: solid;
+        font-family: Consolas, Impact;
+        box-align: center;
+        cursor: crosshair;
+      } 
+
+      #Lemonade {
+        background-color: lemonchiffon;
+        border: dashed;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      #Mint {
+        height: 28%;
+        background-color: azure;
+        border: hidden;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .kotak {
+        text-shadow: 5px 5px 5px silver;
+        text-align: center;
+        font-size: 66pt;
+        color: sandybrown;
+      }
+
+      input#tombol {
+        color: Aqua;
+        background: salmon;
+        border: 2px dotted dodgerblue;
+        font-size: 14px;
+        font: bold;
+      }
+
+      .username {
+        color: blue;
+        background: aqua;
+        size: 12px;
+      }
+
+      input#tombol:hover {
+        color: yellow;
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Bubblegum" class="kotak">بَسْمَلَة‎</div>
+    <div id="Lemonade">
+      <form name="LOGIN">
+        <table align="center">
+          <tr>
+            <td><label for="username" class="username">Username</label></td>
+            <td><input type="text"></td>
+          </tr> 
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password"></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center"><input type="submit" value="Login" id="tombol"></td>
+          </tr>
+        </table> 
+      </form> 
+    </div>
+    <div id="Mint" class="kotak">Tetap Semangat</div>
+  </body>
+</html>

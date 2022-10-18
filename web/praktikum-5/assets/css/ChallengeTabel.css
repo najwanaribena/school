@@ -1,0 +1,38 @@
+table {
+  margin: 0 auto;
+  width: 700px;
+  border: 2px #000 dashed;
+}
+
+th {
+  background-color: #FFFECD;
+  color: red;
+  text-decoration: underline;
+  font-weight: normal;
+  border: 2px #FF0000 dashed;
+}
+
+tr.title {
+  background-color: #99CCFD;
+}
+
+tr.title td {
+  border: 3px #802945 solid;
+  font-style: italic;
+}
+
+tr {
+  background-color: #CCC;
+}
+
+td {
+  border: 2px #838383 solid;
+}
+
+img.basket-1 {
+  width: 100px;
+}
+
+img.basket-2 {
+  width: 300px;
+}

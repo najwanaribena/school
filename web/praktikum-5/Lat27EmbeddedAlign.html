@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Embedded CSS dengan Align</title>
+    <style type="text/css">
+      h1 {
+        height: 44px;
+        color: coral;
+      } 
+
+      body, p {
+        color: #b2d9ea;
+        background-color: teal;
+        font-family: Consolas;
+      }
+
+      p {
+        text-indent: 5cm;
+        text-align: justify;
+      }
+
+      p.besar {
+        text-transform: uppercase;
+      }
+
+      p.kecil {
+        text-transform: lowercase;
+      }
+
+      p.kapital {
+        text-transform: capitalize;
+      }
+
+      p.ex {
+        color: rgb(255, 220, 244);
+      }
+
+      p.ex::first-line {
+        color: rgb(0, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selamat Datang XI RPL! ini adalah h1</h1>
+    <p>Ini adalah paragraph biasa, ditulis dengan warna biru pastel. Default text-color didefinisikan pada body selector</p>
+    <p class="ex">Ini adalah paragraph with class="ex". Dan warna teks hijau, tapi pada baris kedua, akan berwarna lain. Coba kalian buktikan saja == dengan text indent.
+    Form adalah salah satu bentuk halaman web yang digunakan untuk menerima masukan dari pengguna, untuk selanjutnya masukan dari pengguna tersebut diolah menggunakan bahasa pemrograman web, baik secara server side scripting (misalkan PHP, JSP) ataupun client-side scripting (Javascript)</p>
+ 
+    aku diluar tag P jadi aku tanpa text indent.
+    Form adalah salah satu bentuk halaman web yang digunakan untuk menerima masukan dari pengguna, untuk selanjutnya masukan dari pengguna tersebut diolah menggunakan bahasa pemrograman web, baik secara server side scripting (misalkan PHP, JSP) ataupun client-side scripting (Javascript)
+
+    <p class="besar">Pengubahan menjadi huruf besar (kapital)</p>
+    <p class="kecil">PENGUBAHAN MENJADI HURUF KECIL</p>
+    <p class="kapital">huruf kapital pada setiap awal kata</p>
+  </body>
+</html>
