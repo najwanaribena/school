@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Kantin Siswa"
+            android:textSize="25dp"
+            android:textColor="#363635" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="60dp"
+        android:padding="5dp"
+        android:background="@drawable/borderradius"
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textAlignment="center"
+                android:background="@drawable/borderradiusgreen"
+                android:textSize="18dp"
+                android:textColor="#FFF"
+                android:text="Makanan" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:text="Minuman" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/categories">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/borderradius">
+
+                <ImageView
+                    android:id="@+id/burger"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/burger"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/burgertitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/burger"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Burger Lezat dan Bergizi"
+                    android:textColor="#363635"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/burgerprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/burger"
+                    android:layout_below="@id/burgertitle"
+                    android:textSize="18dp"
+                    android:text="Rp 5.000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/burger"
+                    android:layout_below="@id/burgerprice"
+                    android:text="Davin" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/borderradius">
+
+                <ImageView
+                    android:id="@+id/donut"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/donut"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/donuttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/donut"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Donat Imut Manis Enak"
+                    android:textColor="#363635"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/donutprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/donut"
+                    android:layout_below="@id/donuttitle"
+                    android:textSize="18dp"
+                    android:text="Rp 3.000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/donut"
+                    android:layout_below="@id/donutprice"
+                    android:text="Akbar" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/borderradius">
+
+                <ImageView
+                    android:id="@+id/risol"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/risol" />
+
+                <TextView
+                    android:id="@+id/risoltitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/risol"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Risol Anu Badag Pisan"
+                    android:textColor="#363635"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/risolprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/risoltitle"
+                    android:layout_toRightOf="@id/risol"
+                    android:text="Rp 3.500"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/risol"
+                    android:layout_below="@id/risolprice"
+                    android:text="Yazid" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/borderradius">
+
+                <ImageView
+                    android:id="@+id/salad"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/salad" />
+
+                <TextView
+                    android:id="@+id/saladtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/salad"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Salad Untuk Para Vegan"
+                    android:textColor="#363635"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/saladprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/saladtitle"
+                    android:layout_toRightOf="@id/salad"
+                    android:text="Rp 10.000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/salad"
+                    android:layout_below="@id/saladprice"
+                    android:text="Rudi" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/borderradius">
+
+                <ImageView
+                    android:id="@+id/ayam"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ayam" />
+
+                <TextView
+                    android:id="@+id/ayamtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ayam"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Ayam Crispy Kriuk Renyah"
+                    android:textColor="#363635"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ayamprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ayamtitle"
+                    android:layout_toRightOf="@id/ayam"
+                    android:text="Rp 10.000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ayam"
+                    android:layout_below="@id/ayamprice"
+                    android:text="Rudi" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="200dp"
+                android:background="@drawable/borderradius">
+
+                <ImageView
+                    android:id="@+id/puding"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/puding" />
+
+                <TextView
+                    android:id="@+id/pudingtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/puding"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Puding Kenyal dan Nikmat"
+                    android:textColor="#363635"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pudingprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pudingtitle"
+                    android:layout_toRightOf="@id/puding"
+                    android:text="Rp 10.000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/puding"
+                    android:layout_below="@id/pudingprice"
+                    android:text="Rudi" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
