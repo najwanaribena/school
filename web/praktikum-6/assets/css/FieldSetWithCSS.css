@@ -1,0 +1,51 @@
+body {
+  font-family: Consolas;
+}
+
+fieldset {
+  background-color: #EAEAEA;
+}
+
+legend {
+  background-color: #788BA7;
+  border: 1px solid #000;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+table {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  border-spacing: 10px;
+}
+
+tr {
+  margin-bottom: 100px !important;
+}
+
+input {
+  border-color: #788BA7;
+}
+
+button {
+  background-color: #788BA7;
+  color: #FFF;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+.l {
+  box-shadow: 0 0 0 2px #5F9DF7;
+}
+
+.p {
+  box-shadow: 0 0 0 2px #C47AFF;
+}
