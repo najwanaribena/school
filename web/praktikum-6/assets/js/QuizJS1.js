@@ -21,60 +21,43 @@ for (let i = 0; i < 10; i++) {
 }
 
 const data = [];
-const operator = [];
 const clearInput = () => input.innerHTML = '';
 const getInput = () => parseInt(input.innerHTML);
 const setInput = str => input.innerHTML = `${str}`;
 
-btn.ac.addEventListener('click', () => clearInput());
+btn.ac.addEventListener('click', () => {
+  clearInput();
+  data.length = 0;
+});
 
 btn.divide.addEventListener('click', () => {
   data.push(getInput());
-  operator.push('/');
+  data.push('/');
   clearInput();
 });
 
 btn.times.addEventListener('click', () => {
   data.push(getInput());
-  operator.push('*');
+  data.push('*');
   clearInput();
 });
 
 btn.min.addEventListener('click', () => {
   data.push(getInput());
-  operator.push('-');
+  data.push('-');
   clearInput();
 });
 
 btn.plus.addEventListener('click', () => {
   data.push(getInput());
-  operator.push('+');
+  data.push('+');
   clearInput();
 });
 
 btn.equal.addEventListener('click', () => {
   data.push(getInput());
   clearInput();
-
-  let ans = data[0];
-  for (let i = 0; i < operator.length; i++) {
-    switch(operator[i]) {
-      case '+':
-        ans += data[i + 1];
-        break;
-      case '-':
-        ans -= data[i + 1];
-        break;
-      case '*':
-        ans *= data[i + 1];
-        break;
-      case '/':
-        ans /= data[i + 1];
-        break;
-    } 
-  }
-
+  const ans = eval(data.join(''));
   setInput(ans);
   data.length = 0;
-  operator.length = 0;
 });
