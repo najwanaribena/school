@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>LATIHAN SWITCH:</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/BuatIf.css">
+  </head>
+  <body>
+    <script>
+      alert("MENU MASAKAN PADANG\n SILAHKAN PILIH MENU YANG DIIGINKAN\n\nKlik ok untuk melanjutkan");
+      var pilihan = prompt("1. Rendang....................Rp 14.000\n2. Ikan Balado................Rp 13.000\n3. Dendeng Balado....................Rp 17.000\n4. Soto Padang....................Rp 15.000\n5. Gulai Paku....................Rp 20.000")
+
+      pilihan = parseInt(pilihan);
+
+      switch (pilihan) {
+        case 1:
+          alert("Menu yang anda pilih: Rendang....................Rp 14.000");
+          break;
+        case 2:
+          alert("Menu yang anda pilih: Ikan Balado....................Rp 13.000");
+          break;
+        case 3:
+          alert("Menu yang anda pilih: Dendeng Balado....................Rp 17.000");
+          break;
+        case 4:
+          alert("Menu yang anda pilih: Soto Padang....................Rp 15.000");
+          break;
+        case 5:
+          alert("Menu yang anda pilih: Gulai Paku....................Rp 20.000");
+          break;
+        default:
+          alert("Menu yang anda pilih: Tidak ada/Silahkan pilih menu yang lain, terima kasih");
+          break;
+      }
+    </script>
+  </body>
+</html>

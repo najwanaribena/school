@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <script>
+      while (true) {
+        const input = prompt('Kalkulator:\n1. Penjumlahan (+)\n2. Pengurangan (-)\n3. Perkalian (*)\n4. Pembagian (/)\n5. Modulus (%)');
+
+        try {
+          const result = eval(input);
+          if (result === undefined || result === null) {
+            throw 'Input tidak valid';
+          }
+          alert(`Hasil:\n${input} = ${result}`);
+        } catch (e) {
+          alert(e);
+        }
+      }
+    </script> 
+  </body>
+</html>
