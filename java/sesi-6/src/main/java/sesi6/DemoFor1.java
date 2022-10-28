@@ -7,9 +7,9 @@ class DemoFor1 {
     for (int i = 1; i <= n; i++) {
       hasil += i;
       if (i != n) {
-        System.out.println(i + " + ");
+        System.out.print(i + " + ");
       } else {
-        System.out.println("= ");
+        System.out.print("= ");
       }
     }
     System.out.println(hasil);

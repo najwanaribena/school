@@ -6,15 +6,15 @@ class DemoWhile1 {
     int hasil = 0;
     int i = 1;
     while (i <= 5) {
-      System.out.println(i);
+      System.out.print(i);
       if (i != n) {
-        System.out.println(" + ");
+        System.out.print(" + ");
       } else {
-        System.out.println(" = ");
+        System.out.print(" = ");
       }
       hasil += i;
       i++;
     }
-    System.out.println(hasil);
+    System.out.print(hasil);
   }
 }
