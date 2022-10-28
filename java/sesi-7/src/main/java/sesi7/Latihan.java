@@ -24,7 +24,7 @@ public class Latihan {
 
     String[] jenisKendaraan = new String[jumlahJenisKendaraan];
     System.out.println("\n================ JENIS KENDARAAN ======================");
-    for (int i = 0; i < jumlahKota; i++) {
+    for (int i = 0; i < jumlahJenisKendaraan; i++) {
       System.out.print("Masukkan jenis kendaraan ke-" + (i + 1) + ": ");
       jenisKendaraan[i] = scanner.nextLine();
     }
@@ -47,7 +47,7 @@ public class Latihan {
       for (int j = 0; j < jumlahJenisKendaraan; j++) {
         System.out.println(jenisKendaraan[j] + ": " + jumlahKendaraan[i][j]);
         totalKota += jumlahKendaraan[i][j];
-        totalKendaraan[i] += jumlahKendaraan[j][i];
+        totalKendaraan[j] += jumlahKendaraan[i][j];
       }
       totalSemua += totalKota;
       System.out.println("+ Jumlah: " + totalKota);
