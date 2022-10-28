@@ -10,6 +10,6 @@ public class ArraySample3 {
       {"toby", "gray"},
       {"fido", "black"},
     };
-    System.out.println(dogs[0][0]);
+    System.out.print(dogs[0][0]);
   }
 }
