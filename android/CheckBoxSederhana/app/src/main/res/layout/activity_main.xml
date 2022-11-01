@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Menu Makanan"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/ayam1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kopi Rp 8.000" />
+
+        <CheckBox
+            android:id="@+id/ayam2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indomie Rp 5.000" />
+
+        <CheckBox
+            android:id="@+id/ayam3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teh Manis Rp 3.000" />
+    </LinearLayout>
+
+   <Button
+       android:id="@+id/pesan"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Pesan Makanan" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Makakan Yang Di pesan"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/menu_satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu 1: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/menu_dua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Menu 2: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/menu_tiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Menu 3: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/total_harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Total Harga: "
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>
