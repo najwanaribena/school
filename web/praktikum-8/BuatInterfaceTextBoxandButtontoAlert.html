@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Interface dengan JS</title>
+  </head>
+  <body>
+    <p id="coba">
+      <input type="text" id="nilai">
+      <input type="button" id="btnAmbilNilai" value="Ambil Nilai" onclick="ambilNilai();">
+      <script>
+        function ambilNilai() {
+          var objNilai = document.getElementById('nilai');
+          var n = objNilai.value;
+          alert('Nilainya adalah ' + n);
+        }
+      </script>
+    </p>
+  </body>
+</html>

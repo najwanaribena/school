@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>For In Loop</title>
+  </head>
+  <body>
+    <h2>Pengulangan For pada javascript</h2>
+    <p>pernyataan for in mengulang melalui properti pada object</p>
+    <p id="forInLoop"></p>
+    <script>
+      var txt = '';
+      var orang = {fname:'Anna', lname:'Sui', usia: 16};
+      var x;
+      for (x in orang) {
+        txt += orang[x] + " ";
+      }
+      document.getElementById('forInLoop').innerHTML = txt;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Buat Fungsi PBO</title>
+  </head>
+  <body>
+    <p id="coba">
+      <script>
+        function SegiEmpat() { }
+        function SegiEmpat() {
+          this.panjang = 0;
+          this.lebar = 0;
+          this.hitungLuas = function() {
+            var luas = this.panjang * this.lebar;
+            return luas;
+          }
+          this.hitungKeliling = function() {
+            var kel = 2 * (this.panjang * this.lebar);
+            return kel;
+          }
+        }
+
+        var s = new SegiEmpat();
+        s.panjang = 4;
+        s.lebar = 3;
+        alert('Luas adalah ' + s.hitungLuas() + ' cm');
+        alert('dan keliling adalah ' + s.hitungKeliling() + ' cm');
+      </script>
+    </p>
+  </body>
+</html>
