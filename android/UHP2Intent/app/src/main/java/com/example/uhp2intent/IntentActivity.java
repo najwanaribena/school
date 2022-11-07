@@ -17,6 +17,9 @@ public class IntentActivity extends AppCompatActivity {
         EditText editText2 = findViewById(R.id.editext2);
         Button get2 = findViewById(R.id.get2);
 
+        String name = getIntent().getExtras().getString("name");
+        editText2.setText(name);
+
         get2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

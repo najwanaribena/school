@@ -15,11 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button get1 = findViewById(R.id.get1);
+        EditText editText1 = findViewById(R.id.editext1);
 
         get1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, IntentActivity.class);
+                String name = editText1.getText().toString();
+                intent.putExtra("name", name);
                 startActivity(intent);
             }
         });
