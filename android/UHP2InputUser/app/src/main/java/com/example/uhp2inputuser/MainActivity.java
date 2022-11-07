@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                b1 = (s == null) ? 0 : Integer.parseInt(s.toString());
+                b1 = (s.toString().equals("")) ? 0 : Integer.parseInt(s.toString());
                 b3 = b1 + b2;
                 hasil.setText(Integer.toString(b3));
             }
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                b2 = (s == null) ? 0 : Integer.parseInt(s.toString());
+                b2 = (s.toString().equals("")) ? 0 : Integer.parseInt(s.toString());
                 b3 = b1 + b2;
                 hasil.setText(Integer.toString(b3));
             }
