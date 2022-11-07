@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E97777"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="TableLayout" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="ICC Ranking of Players:" />
+
+        <TableRow
+            android:padding="10dp"
+            android:background="#E97777">
+
+            <TextView
+                android:text="Rank"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Player"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Team"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Points"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp"
+            android:background="#F0F7F7">
+
+            <TextView
+                android:text="1"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Roberto Carlos"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="USA"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="1080"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp"
+            android:background="#F0F7F7">
+
+            <TextView
+                android:text="2"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Rangga Jamal"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="IDN"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="987"
+                android:layout_weight="1" />
+        </TableRow>
+
+
+        <TableRow
+            android:padding="10dp"
+            android:background="#F0F7F7">
+
+            <TextView
+                android:text="3"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Hashyim Qobul"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="ARB"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="921"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp"
+            android:background="#F0F7F7">
+
+            <TextView
+                android:text="4"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="James Rodriguez"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="ENG"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="915"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp"
+            android:background="#F0F7F7">
+
+            <TextView
+                android:text="5"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Masaki Kishimoto"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="JPN"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="880"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
