@@ -1,0 +1,62 @@
+h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.contact {
+  margin: 80px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-family: Ubuntu;
+  font-size: 16px;
+  border: none;
+  width: 400px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: #EAEAEA;
+}
+
+textarea {
+  resize: none;
+  width: 700px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #EAEAEA;
+}
+
+button {
+  width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .contact {
+    margin: 50px 0;
+  }
+
+  textarea {
+    width: 100%
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  input {
+    width: 100%;
+  }
+}

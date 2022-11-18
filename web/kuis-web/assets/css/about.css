@@ -1,0 +1,32 @@
+h1 {
+  font-size: 40px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.about {
+  margin-bottom: 150px;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+}
+
+.about div {
+  margin-bottom: 30px;
+}
+
+.about p {
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .about {
+    margin: 50px 0;
+  }
+}
